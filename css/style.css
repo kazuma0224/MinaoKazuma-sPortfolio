@@ -1,0 +1,472 @@
+html{
+    // <uniquifier>: Use a unique and descriptive class name
+    // <weight>: Use a value from 100 to 900
+
+  .noto-sans-jp-<uniquifier> {
+  font-family: "Noto Sans JP", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  }
+    .poppins-thin {
+  font-family: "Poppins", serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", serif;
+  font-weight: 900;
+  font-style: italic;
+}
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 400 to 700
+
+.dancing-script-<uniquifier> {
+  font-family: "Dancing Script", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+}
+
+.pop {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 90%;
+    max-width: 1120px;
+    margin: 0 auto;
+    position: relative;
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+header {
+    padding: 27px 0;
+}
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+.logo span {
+    color:dodgerblue;
+}
+.header_menu li {
+    margin-left: 40px;
+}
+.header_menu li a {
+    transition: .3s;
+}
+.header_menu li a:hover {
+    color: dodgerblue;
+    transition: .3s;
+}
+
+@media only screen and (max-width: 1100px) {
+    header .container {
+        justify-content: center;
+    } 
+    .header_menu li {
+        margin: 20px 16px 0;
+    }
+}
+
+
+#hero {
+    background-position: center;
+    background-size: cover;
+    height: 540px;
+    width: 800px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 90px;
+    overflow: hidden;
+}
+#hero::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.2;
+    z-index: 1;
+}
+.hero_inner {
+    z-index: 2;
+    color: #ffffff;
+    width: 100%;
+    text-align: center;
+}
+.hero_inner p {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+.hero_inner h1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.slideimg {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    animation: slideAnime 9s infinite;
+}
+
+.slidecontainer .slideimg:nth-of-type(1) { 
+    background-image: url(../images/勉強タイマーホーム.png); 
+    animation-delay: 0s; 
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.slidecontainer .slideimg:nth-of-type(2) { 
+    background-image: url(../images/はざまくんホーム.png); 
+    animation-delay: 3s; 
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.slidecontainer .slideimg:nth-of-type(3) { 
+    background-image: url(../images/KelpSurvival画面.png); 
+    animation-delay: 6s;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@keyframes slideAnime {
+    0%, 63%, 100% {opacity: 0;}
+    20%, 33% {opacity: 1;}
+}
+
+@media only screen and (max-width: 1100px) {
+    #hero {
+        height: 460px;
+        width: auto;
+    }
+    .hero_inner p {
+        font-size: 15px;
+    }
+    .hero_inner h1 {
+        font-size: 17px;
+    }
+}
+
+/*works*/
+#work {
+    margin-bottom: 120px;
+}
+.title {
+    font-size: 20px;
+    font-weight: 500;
+    color:dodgerblue;
+    margin-bottom: 40px;
+}
+#work h3 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 60px;
+}
+.column-2 {
+    width: 48%;
+}
+.text {
+    line-height: 2;
+}
+.work-img {
+    position: absolute;
+    top: 30%;
+    right: 0;
+    opacity: 0;
+    animation: slideAnime 9s infinite;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 340px;
+    width: 500px;
+    border-radius: 20px;
+}
+.slidecontainer .work-img:nth-of-type(1) {
+    background-image: url(../images/勉強タイマーホーム.png);
+    animation-delay: 0s;
+}
+.slidecontainer .work-img:nth-of-type(2) {
+    background-image: url(../images/勉強タイマー動作.png);
+    animation-delay: 3s;
+}
+.slidecontainer .work-img:nth-of-type(3) {
+    background-image: url(../images/勉強タイマーグラフ.png);
+    animation-delay: 6s;
+}
+@keyframes slideAnime {
+    0%, 63%, 100% { opacity: 0; }
+    20%, 33% { opacity: 1; }
+}
+.heading {
+    font-family: "Dancing Script", serif;
+    font-size: 200px;
+    font-weight: 700;
+    color: dodgerblue;
+    opacity: 0.1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateY(-30%);
+    z-index: -1;
+}
+
+@media only screen and (max-width: 1100px) {
+    #work h3 {
+        font-size: 24px;
+        line-height: 1.5;
+    }
+    .column-2 {
+        width: 100%;
+    }
+    .text {
+        font-size: 15px;
+        line-height: 1.7;
+        margin-bottom: 240px;
+    }
+    .work-img {
+        height: 240px;
+        width: 360px;
+        top: 460px;
+    }
+}
+
+
+.hazard-text {
+    line-height: 2;
+    margin-bottom: 20%;
+}
+.hazard-img {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    opacity: 0;
+    animation: slideAnime 12s infinite;
+    background-position: center;
+    background-size: cover;
+    height: 540px;
+    width: 290px;
+    border-radius: 20px;
+}
+.slidecontainer .hazard-img:nth-of-type(1) {
+    background-image: url(../images/はざまくんホーム縦.png);
+    animation-delay: 0s;
+}
+.slidecontainer .hazard-img:nth-of-type(2) {
+    background-image: url(../images/はざまくん災害情報.png);
+    animation-delay: 3s;
+}
+.slidecontainer .hazard-img:nth-of-type(3) {
+    background-image: url(../images/はざまくん災害対策.png);
+    animation-delay: 6s;
+}
+.slidecontainer .hazard-img:nth-of-type(4) {
+    background-image: url(../images/はざまくんハザードマップ.png);
+    animation-delay: 9s;
+}
+@keyframes slideAnime {
+    0%, 40%, 100% { opacity: 0; }
+    15%, 25% { opacity: 1; }
+}
+
+@media only screen and (max-width: 1100px){
+    #hazard h3 {
+        font-size: 24px;
+    }
+    .column-2 {
+        width: 100%;
+    }
+    .hazard-text {
+        font-size: 15px;
+        line-height: 1.7;
+        margin-bottom: 500px;
+    }
+    .hazard-img {
+        height: 480px;
+        width: 260px;
+        margin-left: 50px;
+        margin-top: 450px;
+    }
+}
+
+
+.game-text {
+    line-height: 2;
+    margin-bottom: 20px;
+}
+.video video{
+    width: 500px;
+    height: 340px;
+}
+
+@media only screen and (max-width: 1100px){
+    .game-text {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+    .video video{
+        margin-top: 30px;
+        width: 360px;
+        height: auto;
+    }
+}
+
+#profile {
+    margin-bottom: 120px;
+}
+#profile dl {
+    max-width: 900px;
+    margin-left: auto;
+}
+#profile dt {
+    width: 30%;
+    padding: 48px 0;
+    font-weight: 500;
+    border-bottom: solid 1px #6495ED;
+}
+#profile dd {
+    width: 70%;
+    padding: 48px 0;
+    border-bottom: solid 1px #6495ED;
+}
+
+@media only screen and (max-width: 1100px){
+    #profile dl {
+    font-size: 13px;
+    }
+}
+
+footer {
+    height: 150px;
+    padding: 50px;
+    background-color: #D9EFF9;
+    text-align: center;
+}
+.footer_menu li {
+    font-size: 24px;
+    margin: 0 auto;
+}
+.footer_menu li a {
+    transition: .3s;
+}
+.footer_menu li a:hover {
+    color: dodgerblue;
+    transition: .3s;
+}
+.copyright {
+    font-size: 12px;
+    margin-top: 30px;
+}

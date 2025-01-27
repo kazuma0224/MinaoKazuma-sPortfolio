@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Portfolio</title>
+  
+  <!-- リセットCSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@3.0.2/destyle.css">
+  
+  <!-- style.css -->
+  <link rel="stylesheet" href="./css/style.css">
+  
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Noto+Sans+JP:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+  
+<body>
+  
+  <header>
+    <div class="container flex pop">
+      <a href="" class="logo">
+          MinaoKazuma's <span>portfolio</span>  
+      </a>
+      <nav>
+        <ul class="header_menu flex">
+            <li><a href="#work">Works</a></li>
+            <li><a href="#profile">Profile</a></li>
+        </ul>  
+      </nav>
+    </div>  
+  </header>
+  
+  <main>
+    
+      <section id="hero" class="container">
+          <div class="hero_inner">
+             <p class="pop">works</p>
+             <h1>制作物</h1>
+          </div>
+          <div class="slidecontainer">
+              <div class="slideimg"></div>
+              <div class="slideimg"></div>
+              <div class="slideimg"></div>
+          </div>
+      </section>
+          
+      
+      <section id="work" class="container">
+          <div class="heading">Application</div>
+          <h2 class="title pop">Works</h2>
+          <h3>作業用タイマーアプリ</h3>
+          <div class="flex">
+              <div class="column-2">
+                  <p class="text">
+                      このアプリは、作業に集中するためのタイマー機能を提供します。<br>
+                      入力した時間をもとにカウントダウンを開始し、効率的な時間管理をサポートします。<br>
+                      また、25分の作業と5分の休憩を繰り返す「ポモドーロ・テクニック」に対応しており、効果的な作業習慣を身につける手助けをします。<br>
+                      さらに、直近7回の目標時間と実際に作業した時間をグラフで表示する機能も搭載。<br>
+                      過去の取り組みを振り返り、進捗を可視化することで、より良い時間管理が可能です。
+                  </p>
+              </div>
+              <div class="slidecontainer">
+                  <div class="column-2 work-img"></div>
+                  <div class="column-2 work-img"></div>
+                  <div class="column-2 work-img"></div>
+              </div>
+          </div>
+      </section>
+      
+      <section id="work" class="container">
+          <h3>防災アプリ</h3>
+          <div class="flex">
+              <div class="slidecontainer">
+                  <div class="column-2 hazard-img"></div>
+                  <div class="column-2 hazard-img"></div>
+                  <div class="column-2 hazard-img"></div>
+                  <div class="column-2 hazard-img"></div>
+              </div>
+              <div class="column-2">
+                  <p class="hazard-text">
+                      このアプリは、災害対策をサポートするための3つの機能を備えた防災アプリです。<br>
+                      <b>1.災害データの閲覧機能</b><br>
+                      過去に発生した災害の規模や被害を確認できます。これにより、ユーザが災害に対する危機感を持ち、防災意識を高めます。<br><br>
+                      <b>2.災害対策方法の閲覧機能</b><br>
+                      災害に備えるための具体的な対策方法を閲覧でき、ユーザの防災知識を高めます。<br><br>
+                      <b>3.ハザードマップ作成機能</b><br>
+                      ユーザは災害時の避難場所や避難経路を地図上で作成・記録できます。また、地図上にメモを追加することで、オリジナルのハザードマップを作ることができます。<br>
+                  </p>
+              </div>
+          </div>
+      </section>
+      
+      <section id="work" class="container">
+          <div class="heading">Game</div>
+          <h3>3Dアクションゲーム</h3>
+          <div class="flex">
+              <div class="column-2">
+                  <p class="game-text">
+                      このゲームは、オープンワールドを舞台とした３Dアクションゲームです。<br>
+                      プレイヤーは広大なフィールドを探索し、アイテムを入手・合成することができます。
+                      そして、これらのアイテムを駆使して、強敵との戦闘に挑戦します。
+                  </p>
+              </div>
+              <div class="video"> 
+                 <video  src="../images/KelpSurvival紹介動画.mp4" controls></video>
+              </div>
+          </div>
+      </section>
+      
+      <section id="profile" class="container">
+          <h2 class="title pop">Profile</h2>
+          <dl class="flex">
+              <dt>名前</dt>
+              <dd>源尾 和真</dd>
+              <dt>学校</dt>
+              <dd>和歌山工業高等専門学校</dd>
+              <dt>学科</dt>
+              <dd>電気情報工学科</dd>
+              <dt>メールアドレス</dt>
+              <dd>kazuma0224m@gmail.com</dd>
+          </dl>
+      </section>
+  </main>
+  
+  <footer>
+    <div class="container pop">
+      <nav>
+        <ul class="footer_menu flex">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#work">Works</a></li>
+            <li><a href="#profile">Profile</a></li>
+        </ul>  
+      </nav>
+    </div>
+      <div class="copyright">Copyright©Minao Kazuma. All Rights Reserved.</div>
+  </footer>
+  
+</body>
+
+</html>
