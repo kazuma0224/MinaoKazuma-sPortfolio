@@ -342,6 +342,9 @@ header {
         width: 360px;
         top: 460px;
     }
+    .heading {
+        font-size: 110px;
+    }
 }
 
 
